@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Test001</title>
+  <title>Two World</title>
   <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
@@ -20,14 +20,14 @@
     <div class="spinner-wrap">
       <div class="spinner"></div>
     </div>
-    <span id="loading">로딩중</span>
+    <span id="loading">Loading...</span>
     <div id="loadingPercentage">0</div>
 
   </div>
 
 
 
-  <script src="Build/WebMazeTest.loader.js"></script>
+  <script src="Build/RoomEscape_TW.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // Mobile device style: fill the whole browser client area with the game canvas:
@@ -56,9 +56,9 @@
     }
 
     createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/WebMazeTest.data",
-      frameworkUrl: "Build/WebMazeTest.framework.js",
-      codeUrl: "Build/WebMazeTest.wasm",
+      dataUrl: "Build/RoomEscape_TW.data",
+      frameworkUrl: "Build/RoomEscape_TW.framework.js",
+      codeUrl: "Build/RoomEscape_TW.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "MazeProject",
