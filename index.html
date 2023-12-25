@@ -45,7 +45,7 @@
     }
 
     var target = window.document.querySelector("#loadingPercentage");
-    var unityGame = document.getElementById("unity-canvas");
+    var unityCanvas = document.getElementById("unity-canvas");
     var onPrograss = function (prograss) {
       if (prograss < 0.8) {
         target.innerHTML = ((parseFloat(prograss) * 120)).toFixed(0) + "%";
@@ -57,9 +57,9 @@
     }
 
     createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/TwoWorld.data",
-      frameworkUrl: "Build/TwoWorld.framework.js",
-      codeUrl: "Build/TwoWorld.wasm",
+      dataUrl: "Build/TwoWorld.data.unityweb",
+      frameworkUrl: "Build/TwoWorld.framework.js.unityweb",
+      codeUrl: "Build/TwoWorld.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "MazeProject",
@@ -73,8 +73,8 @@
 
         // document.getElementById("loader").style.display = "none";
         // unityGame.style.display = "block";
-        unityGame.style.height = "100vh";
-        unityGame.style.width = "100vw";
+        unityCanvas.style.height = "100vh";
+        unityCanvas.style.width = "100vw";
 
 
         // unityInstance.SendMessage("Canvas", "SetInviteCode", window.code);
